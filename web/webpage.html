@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>股票分析报告</title>
+    <!-- 引入图表库等资源 -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- 其他样式和脚本 -->
+</head>
+<body>
+    <h1>股票分析报告</h1>
+
+    <!-- 数据输入表单 -->
+    <form id="data-form">
+        <label for="stock-code">股票代码:</label>
+        <input type="text" id="stock-code" name="stock_code" required>
+        <input type="submit" value="获取数据">
+    </form>
+
+    <!-- 展示区域 -->
+    <div id="data-display">
+        <!-- 图表区域 -->
+        <canvas id="stock-chart"></canvas>
+        <!-- 分析文本区域 -->
+        <div id="analysis-text"></div>
+    </div>
+
+    <!-- 下载按钮 -->
+    <button id="download-report">下载报告</button>
+
+    <script>
+        // JavaScript 代码来处理表单提交，调用后端API，展示数据和分析，以及实现下载功能
+    </script>
+</body>
+</html>
