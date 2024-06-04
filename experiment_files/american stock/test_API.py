@@ -49,3 +49,9 @@ data = {
 
 response = requests.post('https://api.openai.com/v1/engines/davinci-codex/completions', headers=headers, json=data)
 print(response.json())
+
+
+
+# {
+#   "prompt": "Analyze the impact of the following news article on Apple Inc.'s stock and provide a clear rating based on the criteria provided below:\n\n[Insert news content here]\n\nRating Criteria:\n- Bullish: If the news is positive for Apple's stock, rate as Slightly Bullish (1 point), Moderately Bullish (2 points), or Highly Bullish (3 points).\n- Bearish: If the news is negative for Apple's stock, rate as Slightly Bearish (1 point), Moderately Bearish (2 points), or Highly Bearish (3 points).\n- Not Relevant: If the news content is not directly related to Apple's stock, rate as Low Relevance (1 point), Moderate Relevance (2 points), or High Relevance (3 points).\n\nPlease provide your analysis and a final rating based on these guidelines."
+# }
